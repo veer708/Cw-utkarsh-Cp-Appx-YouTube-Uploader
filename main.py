@@ -32,27 +32,27 @@ photo1 = 'https://envs.sh/PQ_.jpg'
 getstatusoutput(f"wget {photo1} -O 'photo.jpg'")    
 photo = "photo.jpg"
 
-credit ="😎𝖘:)™~" 
-OWNER = int(os.environ.get("OWNER", 2032347579))
+credit ="Alex:)™~" 
+OWNER = int(os.environ.get("OWNER", 7081036509))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "2032347579 5702090016").split()):  
+    for x in (os.environ.get("ADMINS", "7081036509 5702090016").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="6511161031:AAFjShVa1YtVyO1liNpgG4lw5ftMC4T28LU",    
-   api_id= 21179966,    
-   api_hash= "d97919fb0a3c725e8bb2a25bbb37d57c"
+   bot_token="7451364068:AAHuhmL_f1XsLkMOSIIJSeGCIVB7_fqmicM",    
+   api_id= 20346550,    
+   api_hash= "bc79c3bea7a626887bdc0871eecf0327"
 )
 
-@bot.on_message(filters.command(["start"]))    
+@bot.on_message(filters.command(["started"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n❤️‍🔥 **ᴘʀᴇꜱꜱ /scammer ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ʙʏ ᴛxᴛ**\n\n❤️‍🩹 **ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/'>ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ</a>** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : https://t.me/ScmersHell</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n❤️‍🔥 **ᴘʀᴇꜱꜱ /Ak47 ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ʙʏ ᴛxᴛ**\n\n❤️‍🩹 **ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/'>ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ</a>** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : https://t.me/ScmersHell</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
-@bot.on_message(filters.command("Stop"))    
+@bot.on_message(filters.command("Ruko"))    
 async def restart_handler(_, m):    
     await m.reply_text("🚯 **ꜱᴛᴏᴘᴘᴇᴅ** 🚯", True)    
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -80,7 +80,7 @@ async def download_pdf(url, filename):
         raise
 
 
-@bot.on_message(filters.command(["scammer"]))    
+@bot.on_message(filters.command(["Sorry"]))    
 async def account_login(bot: Client, m: Message):    
     editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
@@ -122,7 +122,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣⪼ 144\n┣⪼ 240\n┣⪼ 360\n┣⪼ 480\n┣⪼ 720\n┣⪼ 1080\n╰━━⌈⚡[😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~]⚡⌋━━➣ **")   
+    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣⪼ 144\n┣⪼ 240\n┣⪼ 360\n┣⪼ 480\n┣⪼ 720\n┣⪼ 1080\n╰━━⌈⚡[Caption Alex:)™~]⚡⌋━━➣ **")   
     input2: Message = await bot.listen(editable.chat.id)    
     raw_text2 = input2.text    
     await input2.delete(True)    
@@ -231,7 +231,7 @@ async def account_login(bot: Client, m: Message):
 
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()    
-            name = f'{str(count).zfill(3)})😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~{name1[:60]}' 
+            name = f'{str(count).zfill(3)})Alex:)™~{name1[:60]}' 
             ytf = f"b[height<={raw_text2}]/bv[height<={raw_text2}]+ba/b/bv+ba" 
 
     
@@ -283,7 +283,7 @@ async def account_login(bot: Client, m: Message):
                         continue
                      
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [Alex:)™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
                     prog = await m.reply_text(Show)    
                     res_file = await helper.download_video(url, cmd, name)    
                     filename = res_file    
@@ -295,7 +295,7 @@ async def account_login(bot: Client, m: Message):
                     
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed [😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™]**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n═════━‧₊˚❀༉‧₊˚.━═════"
+                    f"**downloading failed [Alex:)™]**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n═════━‧₊˚❀༉‧₊˚.━═════"
                     )
                 
     except Exception as e:
